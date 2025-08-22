@@ -1,0 +1,166 @@
+frontend-dapr-1  | time="2025-08-22T14:20:29.449040843Z" level=info msg="Starting Dapr Runtime -- version 1.12.0 -- commit 2149fca96cdf11627c387bda26dcc027d1c47354" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.449058968Z" level=info msg="Log level set to: info" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.449156051Z" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.security type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.450621051Z" level=info msg="loading default configuration" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.454884051Z" level=info msg="metrics server started on :9090/" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.455624426Z" level=info msg="standalone mode configured" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.455645093Z" level=info msg="app id: frontend" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.455702426Z" level=info msg="Dapr trace sampler initialized: DaprTraceSampler(P=0.000100)" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.455912301Z" level=info msg="local service entry announced: frontend -> 172.27.0.8:48486" app_id=frontend component="mdns (nameResolution/v1)" instance=ed6effe342dc scope=dapr.contrib type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.455942468Z" level=info msg="Initialized name resolution to mdns" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.456029301Z" level=info msg="Loading components…" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.458650135Z" level=info msg="Waiting for all outstanding components to be processed…" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.460968718Z" level=info msg="Component loaded: pubsub (pubsub.redis/v1)" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.460987301Z" level=info msg="All outstanding components processed" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.460991968Z" level=info msg="Loading endpoints…" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463714635Z" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463754468Z" level=info msg="All outstanding http endpoints processed" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463809926Z" level=info msg="gRPC server listening on TCP address: :50001" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.api type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463822176Z" level=info msg="Enabled gRPC tracing middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.api type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463829176Z" level=info msg="Enabled gRPC metrics middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.api type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.46388976Z" level=info msg="Registering workflow engine for gRPC endpoint: [::]:50001" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.api type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.463915385Z" level=info msg="API gRPC server is running on port 50001" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.464027176Z" level=info msg="Enabled max body size HTTP middleware with size 4 MB" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.http type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.464587051Z" level=info msg="Enabled tracing HTTP middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.http type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.464605343Z" level=info msg="Enabled metrics HTTP middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.http type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.46480551Z" level=info msg="HTTP server listening on TCP address: :3500" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.http type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465598176Z" level=info msg="HTTP server is running on port 3500" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.46561351Z" level=info msg="The request body size parameter is: 4" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465637093Z" level=info msg="gRPC server listening on TCP address: :48486" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465645551Z" level=info msg="Enabled gRPC tracing middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465659135Z" level=info msg="Enabled gRPC metrics middleware" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465725218Z" level=info msg="Internal gRPC server is running on port 48486" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.465792385Z" level=info msg="application protocol: http. waiting on port 3001.  This will block until the app is listening on that port." app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.467746176Z" level=info msg="application discovered on port 3001" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.490469593Z" level=info msg="app is subscribed to the following topics: [cart-updates] through pubsub=pubsub" app_id=frontend instance=ed6effe342dc scope=dapr.runtime.processor.pubsub type=log ver=1.12.0
+frontend-dapr-1  | time="2025-08-22T14:20:29.490867176Z" level=info msg="dapr initialized. Status: Running. Init Elapsed 35ms" app_id=frontend instance=ed6effe342dc scope=dapr.runtime type=log ver=1.12.0
+products-1       | INFO:     Started server process [1]
+products-1       | INFO:     Waiting for application startup.
+products-1       | INFO:     Application startup complete.
+products-1       | INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+products-1       | INFO:     172.27.0.5:46690 - "GET /dapr/config HTTP/1.1" 404 Not Found
+products-1       | INFO:     172.27.0.5:37004 - "GET /products HTTP/1.1" 200 OK
+redis-1          | 1:C 24 Aug 2025 14:20:29.047 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1          | 1:C 24 Aug 2025 14:20:29.047 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1          | 1:C 24 Aug 2025 14:20:29.047 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1          | 1:M 24 Aug 2025 14:20:29.047 * monotonic clock: POSIX clock_gettime
+redis-1          | 1:M 24 Aug 2025 14:20:29.048 * Running mode=standalone, port=6379.
+redis-1          | 1:M 24 Aug 2025 14:20:29.048 * Server initialized
+redis-1          | 1:M 24 Aug 2025 14:20:29.048 * Ready to accept connections tcp
+frontend-1       | Frontend server running on port 3001
+frontend-1       | SSE endpoint available at /api/cart-updates
+frontend-1       | Getting current order...
+frontend-1       | Getting products...
+frontend-1       | Dapr response status: 200
+frontend-1       | Dapr response status: 200
+frontend-1       | Adding item to current order...
+frontend-1       | Received cart update event: {
+frontend-1       |   event_type: 'cart_updated',
+frontend-1       |   order: { id: 1, items: [ [Object] ] },
+frontend-1       |   order_id: 1,
+frontend-1       |   timestamp: 'simplified'
+frontend-1       | }
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dapr response status: 200
+frontend-1       | Adding item to current order...
+frontend-1       | Received cart update event: {
+frontend-1       |   event_type: 'cart_updated',
+frontend-1       |   order: { id: 1, items: [ [Object] ] },
+frontend-1       |   order_id: 1,
+frontend-1       |   timestamp: 'simplified'
+frontend-1       | }
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dapr response status: 200
+frontend-1       | Adding item to current order...
+frontend-1       | Received cart update event: {
+frontend-1       |   event_type: 'cart_updated',
+frontend-1       |   order: { id: 1, items: [ [Object] ] },
+frontend-1       |   order_id: 1,
+frontend-1       |   timestamp: 'simplified'
+frontend-1       | }
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dispatching the event data to SSE connection
+frontend-1       | Dapr response status: 200
+products-dapr-1  | time="2025-08-22T14:20:29.420062385Z" level=info msg="Starting Dapr Runtime -- version 1.12.0 -- commit 2149fca96cdf11627c387bda26dcc027d1c47354" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.420076176Z" level=info msg="Log level set to: info" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42064051Z" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.security type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42108126Z" level=info msg="loading default configuration" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424423551Z" level=info msg="metrics server started on :9090/" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424691301Z" level=info msg="standalone mode configured" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424705593Z" level=info msg="app id: products" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424749343Z" level=info msg="Dapr trace sampler initialized: DaprTraceSampler(P=0.000100)" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424951343Z" level=info msg="local service entry announced: products -> 172.27.0.5:48930" app_id=products component="mdns (nameResolution/v1)" instance=bb5a5e9d8a4d scope=dapr.contrib type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.424960635Z" level=info msg="Initialized name resolution to mdns" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.425012135Z" level=info msg="Loading components…" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428031551Z" level=info msg="Waiting for all outstanding components to be processed…" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428043176Z" level=info msg="All outstanding components processed" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428046926Z" level=info msg="Loading endpoints…" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42879701Z" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42880726Z" level=info msg="All outstanding http endpoints processed" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428898968Z" level=info msg="gRPC server listening on TCP address: :50001" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.api type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428920551Z" level=info msg="Enabled gRPC tracing middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.api type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.428923468Z" level=info msg="Enabled gRPC metrics middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.api type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42904101Z" level=info msg="Registering workflow engine for gRPC endpoint: [::]:50001" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.api type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429068301Z" level=info msg="API gRPC server is running on port 50001" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429245593Z" level=info msg="Enabled max body size HTTP middleware with size 4 MB" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.http type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429267093Z" level=info msg="Enabled tracing HTTP middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.http type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429272676Z" level=info msg="Enabled metrics HTTP middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.http type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429779885Z" level=info msg="HTTP server listening on TCP address: :3500" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.http type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429799676Z" level=info msg="HTTP server is running on port 3500" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.42980451Z" level=info msg="The request body size parameter is: 4" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429869343Z" level=info msg="gRPC server listening on TCP address: :48930" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429881801Z" level=info msg="Enabled gRPC tracing middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429897135Z" level=info msg="Enabled gRPC metrics middleware" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.429953135Z" level=info msg="Internal gRPC server is running on port 48930" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.430009926Z" level=info msg="application protocol: http. waiting on port 5001.  This will block until the app is listening on that port." app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.634450426Z" level=info msg="application discovered on port 5001" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.419108968Z" level=info msg="Starting Dapr Runtime -- version 1.12.0 -- commit 2149fca96cdf11627c387bda26dcc027d1c47354" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.419139551Z" level=info msg="Log level set to: info" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.419714385Z" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.security type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.421259593Z" level=info msg="loading default configuration" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.433769468Z" level=info msg="metrics server started on :9090/" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.434651468Z" level=info msg="standalone mode configured" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.435603718Z" level=info msg="app id: orders" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.43569226Z" level=info msg="Dapr trace sampler initialized: DaprTraceSampler(P=0.000100)" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.635804093Z" level=info msg="Application configuration loaded" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+products-dapr-1  | time="2025-08-22T14:20:29.635823176Z" level=info msg="dapr initialized. Status: Running. Init Elapsed 211ms" app_id=products instance=bb5a5e9d8a4d scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.436282635Z" level=info msg="local service entry announced: orders -> 172.27.0.6:47516" app_id=orders component="mdns (nameResolution/v1)" instance=ec1e76f57e64 scope=dapr.contrib type=log ver=1.12.0
+orders-1         | INFO:     Started server process [1]
+orders-1         | INFO:     Waiting for application startup.
+orders-1         | INFO:     Application startup complete.
+orders-1         | INFO:     Uvicorn running on http://0.0.0.0:5002 (Press CTRL+C to quit)
+orders-1         | INFO:     172.27.0.6:45584 - "GET /dapr/config HTTP/1.1" 404 Not Found
+orders-1         | INFO:     172.27.0.6:45600 - "GET /dapr/subscribe HTTP/1.1" 404 Not Found
+orders-1         | INFO:     172.27.0.6:58594 - "GET /orders/current HTTP/1.1" 200 OK
+orders-1         | INFO:     172.27.0.6:58594 - "POST /orders/current/items HTTP/1.1" 200 OK
+orders-1         | INFO:     172.27.0.6:44190 - "POST /orders/current/items HTTP/1.1" 200 OK
+orders-1         | INFO:     172.27.0.6:44190 - "POST /orders/current/items HTTP/1.1" 200 OK
+orders-dapr-1    | time="2025-08-22T14:20:29.438648093Z" level=info msg="Initialized name resolution to mdns" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.438733843Z" level=info msg="Loading components…" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.440583551Z" level=info msg="Waiting for all outstanding components to be processed…" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.449785926Z" level=info msg="Component loaded: pubsub (pubsub.redis/v1)" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.449831968Z" level=info msg="All outstanding components processed" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.449841218Z" level=info msg="Loading endpoints…" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.450406426Z" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.450462301Z" level=info msg="All outstanding http endpoints processed" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.450594551Z" level=info msg="gRPC server listening on TCP address: :50001" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.api type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.450776093Z" level=info msg="Enabled gRPC tracing middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.api type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.450887676Z" level=info msg="Enabled gRPC metrics middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.api type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.451716843Z" level=info msg="Registering workflow engine for gRPC endpoint: [::]:50001" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.api type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.451812551Z" level=info msg="API gRPC server is running on port 50001" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.452102885Z" level=info msg="Enabled max body size HTTP middleware with size 4 MB" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.http type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.452180885Z" level=info msg="Enabled tracing HTTP middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.http type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.452266635Z" level=info msg="Enabled metrics HTTP middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.http type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.452485718Z" level=info msg="HTTP server listening on TCP address: :3500" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.http type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.45362251Z" level=info msg="HTTP server is running on port 3500" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.453696885Z" level=info msg="The request body size parameter is: 4" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.453805885Z" level=info msg="gRPC server listening on TCP address: :47516" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.453914718Z" level=info msg="Enabled gRPC tracing middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.453967968Z" level=info msg="Enabled gRPC metrics middleware" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime.grpc.internal type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.454066885Z" level=info msg="Internal gRPC server is running on port 47516" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.45417751Z" level=info msg="application protocol: http. waiting on port 5002.  This will block until the app is listening on that port." app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.66083126Z" level=info msg="application discovered on port 5002" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.662525635Z" level=info msg="Application configuration loaded" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0
+orders-dapr-1    | time="2025-08-22T14:20:29.664847551Z" level=info msg="dapr initialized. Status: Running. Init Elapsed 230ms" app_id=orders instance=ec1e76f57e64 scope=dapr.runtime type=log ver=1.12.0

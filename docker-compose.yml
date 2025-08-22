@@ -1,0 +1,74 @@
+x-service_defaults: &service_defaults
+  platform: linux/amd64
+  restart: unless-stopped
+  networks:
+    - dapr-network
+
+x-dapr_defaults: &dapr_defaults
+  platform: linux/amd64
+  image: daprio/daprd:1.12.0
+  restart: unless-stopped
+  volumes:
+    - "./dapr-components:/components"
+  networks:
+    - dapr-network
+
+services:
+  products:
+    <<: *service_defaults
+    image: ckintrospect1b.azurecr.io/products
+    build: services/products
+    ports:
+      - 5001:5001
+
+  products-dapr:
+    <<: *dapr_defaults
+    depends_on:
+      - products
+    command: ["./daprd", "--app-id", "products", "--app-channel-address", "products", "--app-port", "5001", "--app-protocol", "http", "--dapr-http-port", "3500", "--dapr-grpc-port", "50001", "--components-path", "/components", "--log-level", "info"]
+    ports:
+      - 8501:3500
+
+  orders:
+    <<: *service_defaults
+    image: ckintrospect1b.azurecr.io/orders
+    build: services/orders
+    ports:
+      - 5002:5002
+
+  orders-dapr:
+    <<: *dapr_defaults
+    depends_on:
+      - orders
+    command: ["./daprd", "--app-id", "orders", "--app-channel-address", "orders", "--app-port", "5002", "--app-protocol", "http", "--dapr-http-port", "3500", "--dapr-grpc-port", "50001", "--components-path", "/components", "--log-level", "info"]
+    ports:
+      - 8502:3500
+
+  frontend:
+    <<: *service_defaults
+    image: ckintrospect1b.azurecr.io/frontend
+    build: services/frontend
+    ports:
+      - 3001:3001
+    depends_on:
+      - products
+      - orders
+
+  frontend-dapr:
+    <<: *dapr_defaults
+    depends_on:
+      - frontend
+    command: ["./daprd", "--app-id", "frontend", "--app-channel-address", "frontend", "--app-port", "3001", "--app-protocol", "http", "--dapr-http-port", "3500", "--dapr-grpc-port", "50001", "--components-path", "/components", "--log-level", "info"]
+    ports:
+      - 3501:3500
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - 6379:6379
+    networks:
+      - dapr-network
+
+networks:
+  dapr-network:
+    external: false

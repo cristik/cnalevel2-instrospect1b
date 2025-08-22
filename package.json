@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "up": "docker compose up --build --no-deps",
+    "down": "docker compose down -t0",
+    "db": "docker build --platform linux/amd64 -t"
+  }
+}
